@@ -53,7 +53,7 @@ To get you started quickly,
 we have provided the results of the data processing (a JSON file)
 which will produce Figure 8 of
 ([Whyntie et al., 2015](http://doi.org/10.1080/00107514.2015.1045193))
-when the `perform-analysis.py`: Python script is run like so:
+when the `perform-analysis.py` Python script is run like so:
 
 ```bash
 $ mkdir ../tmp
@@ -83,6 +83,8 @@ $ firefox ../tmp/results/index.html &
 ### Processing the data
 The `process-datasets.py` Python script processes the raw datasets
 obtained for each thickness of test material.
+Use this script to re-run the processing (which also produces frame
+images) or process your own data.
 **Warning**: this could take some time, so be prepared to leave
 your computer running for a while!
 
@@ -91,8 +93,8 @@ $ python process-datasets.py data/sr ../tmp
 ```
 
 ### Sorting the clusters
-The `sort-clusters.py` Python script sorts the clusters into different
-types based on a user-defined algorithm.
+The `sort-clusters.py` Python script sorts the clusters from the
+processed data into different types based on a user-defined algorithm.
 
 ```bash
 $ python sort-clusters.py ../tmp ../tmp 
