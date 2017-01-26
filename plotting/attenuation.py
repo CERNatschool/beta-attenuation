@@ -5,7 +5,7 @@
 
 CERN@school: Analysis functions for the attenuation experiment.
 
-See http://cernatschool.web.cern.ch for more information.
+See the README.md file for more information.
 
 """
 
@@ -33,8 +33,8 @@ from matplotlib.colors import LogNorm
 from matplotlib import rc
 
 # Uncomment to use LaTeX for the plot text.
-rc('font',**{'family':'serif','serif':['Computer Modern']})
-rc('text', usetex=True)
+#rc('font',**{'family':'serif','serif':['Computer Modern']})
+#rc('text', usetex=True)
 
 #...for the chi^2 method.
 from plotting.stats import chi2
