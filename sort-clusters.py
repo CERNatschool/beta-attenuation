@@ -4,9 +4,7 @@
 
  CERN@school - Sorting Clusters
 
- See the README.md and GitHub wiki for more information.
-
- http://cernatschool.web.cern.ch
+ See the README.md for more information.
 
 """
 
@@ -25,11 +23,12 @@ import json
 # Import the plotting libraries.
 import pylab as plt
 
+# For plotting etc.
 from matplotlib import rc
 
 # Uncomment to use LaTeX for the plot text.
-rc('font',**{'family':'serif','serif':['Computer Modern']})
-rc('text', usetex=True)
+#rc('font',**{'family':'serif','serif':['Computer Modern']})
+#rc('text', usetex=True)
 
 # Get the path of the current directory
 path = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))

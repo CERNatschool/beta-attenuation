@@ -1,9 +1,14 @@
 # CERN@school: Beta Attenuation with Aluminium
 This repository contains the code and data you'll need to recreate
 the analysis carried out for the beta radiation attenuation experiment
-described in the CERN@school demonstration experiment paper:
+described in section 5 of the CERN@school _Contemporary Physics_
+demonstration experiment paper:
 
 http://doi.org/10.1080/00107514.2015.1045193
+
+The datasets featured in the paper are included with the code,
+but may also be found on FigShare
+[here](http://doi.org/10.6084/m9.figshare.867659.v2).
 
 We recommend running this code on a GridPP CernVM,
 which may be setup using the instructions found
@@ -27,7 +32,7 @@ Please also feel free to fork and modify this code as required for
 your own research._
 
 
-## The data
+## The datasets
 The code is supplied with the datasets used in
 ([Whyntie et al., 2015](http://doi.org/10.1080/00107514.2015.1045193)),
 which has the measurements of the radiation detected from a Strontium-90
@@ -47,6 +52,29 @@ of aluminium).
 Try running them with the `--help` option to find the input
 arguments required. The scripts are also documented appropriately
 to help you get started.
+
+### Getting the code
+To get the code, create a working directory on your CernVM and
+clone it from GitHub with the following command:
+
+```bash
+$ git clone https://github.com/CERNatschool/beta-attenuation.git
+$ cd beta-attenuation
+```
+
+To prepare for running, run the `setup.sh` script with the following
+command:
+
+```bash
+$ source setup.sh
+```
+
+_Note: if you are not using a GridPP CernVM, the `setup.sh` script
+will not work as you won't have access to the CERN@school CVMFS
+repository and will have to source your own version of the Python
+libraries such as `matplotlib` via e.g. the
+[Anaconda Python distribution](http://anaconda.org)._
+
 
 ### The analysis
 To get you started quickly, 
@@ -80,6 +108,13 @@ You can view the plot and analysis results in a web browser like so:
 $ firefox ../tmp/results/index.html &
 ```
 
+This is Figure 8 of 
+([Whyntie et al. 2015](http://dx.doi.org/10.1080/00107514.2015.1045193)).
+The webpage created by the script also displays some of the 
+information and results associated with the analysis. See the comments in the
+code for more details.
+
+
 ### Processing the data
 The `process-datasets.py` Python script processes the raw datasets
 obtained for each thickness of test material.
@@ -109,11 +144,6 @@ script with the `perform-analysis.py` script
 to re-run the analysis and produce a new set of results.
 
 
-## Authors
-* A. Coupe - @acoupe - Uni. Southampton
-* T. Whyntie - @twhyntie - Queen Mary University of London
-
-
 ## Acknowledgements
 CERN@school was supported by
 the UK [Science and Technology Facilities Council](http://www.stfc.ac.uk) (STFC)
@@ -124,7 +154,7 @@ A. Coupe's summer placement was kindly supported by
 
 
 ## Useful links
-* [Whyntie et al., 2015](http://doi.org/10.1080/00107514.2015.1045193) - the CERN@school demonstration experiment paper;
+* [Whyntie et al. 2015](http://doi.org/10.1080/00107514.2015.1045193) - the CERN@school demonstration experiment paper;
 * The [dataset](http://doi.org/10.6084/m9.figshare.867659.v2) on [FigShare](http://figshare.com);
 * [Setting up a GridPP CernVM](http://doi.org/10.6084/m9.figshare.4552825.v1);
 * The [Institute for Research in Schools](http://researchinschools.org) (IRIS) homepage;

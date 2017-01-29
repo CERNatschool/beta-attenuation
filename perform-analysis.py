@@ -4,9 +4,7 @@
 
  CERN@school - Perform the analysis.
 
- See the README.md and GitHub wiki for more information.
-
- http://cernatschool.web.cern.ch
+ See the README.md for more information.
 
 """
 
