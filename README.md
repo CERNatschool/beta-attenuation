@@ -1,8 +1,8 @@
 # CERN@school: Beta Attenuation with Aluminium
 This repository contains the code and data you'll need to recreate
 the analysis carried out for the beta radiation attenuation experiment
-described in Section 5 of the CERN@school _Contemporary Physics_
-([Whyntie et al. 2015](http://dx.doi.org/10.1080/00107514.2015.1045193))
+described in Section 5 of the CERN@school _Contemporary Physics_ paper
+([Whyntie et al. 2015](http://dx.doi.org/10.1080/00107514.2015.1045193)).
 The datasets featured in the paper are included with the code,
 but may also be found on FigShare
 [here](http://doi.org/10.6084/m9.figshare.867659.v2).
